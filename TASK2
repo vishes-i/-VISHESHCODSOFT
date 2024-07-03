@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Sticky Footer Navbar Template · Bootstrap</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>.
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  .content-section .table>tbody tr th:nth-child(1){
+    background-color: #8bbdc4;}
+.content-section .table>tbody tr th {
+    color: #fff;
+}
+.table-bordered th, .table-bordered td, .table th, .table td, table th, table td {
+    border: 1px solid #dedede; background-color: #869;
+}
+.table th, .table td, table th, table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dedede; background-color: #869;
+}
+th {
+    text-align: inherit; background-color: #869;
+}
+*, *::before, *::after { 
+    box-sizing: border-box;
+}
+user agent stylesheet
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+.content-section .table {
+    font-size: 16px !important;
+}
+.table, table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #333;
+}
+table {
+    border-collapse: collapse;
+}
+user agent stylesheet
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+.content-section {
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow: hidden;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  body{background-color:#f1f2f3 ;}
+ /* unvisited link */
+.navbar li a:link {
+    color:red;
+}
+
+/* visited link */
+.navbar li a:visited {
+    color: green;
+    
+}
+
+/* mouse over link */
+.navbar li a:hover {
+    color: hotpink;
+    display: block; background-color: black;
+}
+.content-section {
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow: hidden;
+}
+ *,*::before, *::after {
+    box-sizing: border-box;
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/* selected link */
+.navbar li a:active {
+    color: blue;
+}
+img{z-index: -1;position:fixed;}
+
+<!--sidebar-->
+ /* unvisited link */
+ .sid-bar li a:link {
+    color:red;
+}
+
+/* visited link */
+.side-bar li a:visited {
+    color: green;
+    
+}
+
+/* mouse over link */
+.side-bar li a:hover {
+    color: hotpink;
+    display: block; background-color: black; padding:10px ;
+}
+
+/* selected link */
+.side-bar li a:active {
+    color: blue;
+}
+table { margin-top:50px ;
+    border-collapse: collapse;
+    width: 100%;
+    border-top:solid black ;
+}
+h6{color:green; text-decoration:underline; font: 1em sans-serif; font-size: 18px; }
+h4,h5{color:chocolate; text-decoration:underline; font: 1em sans-serif; font-size: 27px;}
+th, td { background-color: #888;
+    text-align: left;
+    padding: 8px;
+    border: solid black;
+}
+.floating-box{border: 4x solid grey;background-color: aqua;margin: 4px 0px;padding: 23px;
+width: 33%; box-sizing: border-box; display: inline-block; box-sizing: border-box; text-align: left;}
+</style>
+ </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Menu-Bar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="file:///C:/Users/adity/layout.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gallery<span class="sr-only">(current)</span></a>
+        </li>
+    <li class="nav-item active">
+     <a class="nav-link"   href="#">Services<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link"   href="file:///C:/Users/adity/c.html">Contact<span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item active">
+        <a class="nav-link"   href="#">About us<span class="sr-only">(current)</span></a>
+       </li>  
+       <!--dropdown-->
+<li class="nav-item dropdown active">
+    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+    MENU-BAR
+    </a>
+    <div class="dropdown-menu" style="height: auto; max-height: 200px; overflow-x:hidden ;">
+      <a class="dropdown-item" href="#">LOGIN</a>
+      <a class="dropdown-item" href="#">QUERY</a>
+      <a class="dropdown-item" href="#">COURSES</a>
+      <a class="dropdown-item" href="#">CRITERIA</a>
+      <a class="dropdown-item" href="#">TUTORIALS</a>
+      <a class="dropdown-item" href="#">ASSIGNMENT</a>
+      <a class="dropdown-item" href="#">SETTING </a>
+      <a class="dropdown-item" href="#">link-1</a>
+      <a class="dropdown-item" href="#">link-2</a>
+      <a class="dropdown-item" href="#">link-3</a>
+      <a class="dropdown-item" href="#">link-4</a>
+      <a class="dropdown-item" href="#">link-5</a>
+    </div>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<!--
+  <img src="C:\Users\adity\OneDrive\Documents\1685667817134.jpeg" alt="background-image" height="1100px" width="1560px">
+--> 
+  <figcaption>
+    <H1 style=" margin-top: 100PX; color:tomato;text-decoration: underline; text-align: center;">COMPUTER SCIENCE ENGINEERING</H1>
+    <ul>
+    <li style="font-variant: small-caps; color:chocolate;"> Normal computer science engineering(basic level)</li>  
+    <li style="font-variant: small-caps; color:chocolate;">Specification computer science engineering(advance level= "Artificial intelligence")</li>  
+    </ul>
+    <p style="color:#650505; font:small-caps; margin-left: 40px;">computer science engineering best engineering in all over world </p>
+  </figcaption>
+ <!--sidebar-->
+  <sidebar class="box-model" style="border:15px solid gray; padding:0px;max-height: fit-content; height:px; width:300px ; background-color:darkgreen; text-align:left;color: #869;">
+    <UL class="side-bar" style="display:block;padding:0px ; margin-top:0px; height: auto; max-height: 200px; overflow-x:hidden ;">
+  <h1 style="text-align: center; background-color:darkgreen ;">CONTENT</h1>
+<li style="list-style-position:inside; background-color:rgb(0, 42, 17); padding:10px ;"><a href="#">DCA</a></li>   
+<li style="list-style-position:inside; background-color:rgb(172, 6, 36); padding:10px ;"><a href="#">BCA</a></li>
+  <li style="list-style-position:inside; background-color:rgb(172, 6, 122); padding:10px ;"><a href="#">TYPE-WRITER</a></li>
+  <li style="list-style-position:inside; background-color:saddlebrown; padding:10px ;"><a href="#">CCC(TRIPLE-C)</a></li>
+  <li style="list-style-position:inside; background-color:hotpink; padding:10px ;"><a href="#">CODER(CODING)</a></li>
+  <li style="list-style-position:inside; background-color: brown; padding:10px ;"><a href="#">ADCA</a></li>
+    <li style="list-style-position:inside; background-color:navy; padding:10px ;"><a href="#">HIRING CHALLENGE</a></li>
+    <li style="list-style-position:inside; background-color:goldenrod; padding:10px ;"><a href="#">TRENDING NOW</a></li> 
+    <li style="list-style-position:inside; background-color:aqua; padding:10px ;"><a href="#"> DSA</a></li> 
+    <li style="list-style-position:inside; background-color:chocolate; padding:10px ;"><a href="#">JAVA</a></li> 
+    <li style="list-style-position:inside; background-color: chartreuse; padding:10px ;"><a href="#">PYTHON</a></li> 
+    <li style="list-style-position:inside; background-color:coral; padding:10px ;"><a href="#">C++</a></li> 
+    <li style="list-style-position:inside; background-color: purple; padding:10px ;"><a href="#">C</a></li> 
+    <li style="list-style-position:inside; background-color:blue; padding:10px ;"><a href="#">PHP</a></li> 
+    <li style="list-style-position:inside; background-color: brown; padding:10px ;"><a href="#">CSS</a></li> 
+    <li style=" list-style-position:inside; background-color:orangered; padding:10px ;"><a href="#">HTML</a></li> 
+    <li style="list-style-position:inside; background-color: seagreen; padding:10px ;"><a href="#">DATA STRUCTURE</a></li> 
+    <li style="list-style-position:inside; background-color: blueviolet; padding:10px ;"><a href="#">AlGORITHMS</a></li> 
+    <li style="list-style-position:inside; background-color: red; padding:10px ;"><a href="#">Company    </a> </li>
+    <li style="list-style-position:inside; background-color: lawngreen; padding:10px ;><a href="#">About Us   </a>  </li>
+    <li style="list-style-position:inside; background-color:coral; padding:10px ;"><a href="#"> Careers    </a> </li>
+    <li style="list-style-position:inside; background-color: purple; padding:10px ;"><a href="#">In Media   </a>  </li>
+    <li style="list-style-position:inside; background-color: rgb(4, 255, 0); padding:10px ;"><a href="#">Contact Us </a>  </li>
+    <li style="list-style-position:inside; background-color: rgb(34, 0, 255); padding:10px ;"><a href="#">Terms and Conditions</a> </li>
+    <li style="list-style-position:inside; background-color: rgb(172, 6, 122); padding:10px ;"><a h<a href="#">Privacy Policy      </a>  </li>
+    <li style="list-style-position:inside; background-color:yellowgreen; padding:10px ;"><a href="#">Copyright Policy    </a> </li>
+    <li style="list-style-position:inside; background-color:goldenrod; padding:10px ;"><a href="#">Third-Party Copyright Notices </a> </li>
+ <li style=" list-style-position:inside; background-color:orangered; padding:10px ;"><a href="#">Advertise with us   </a> </li>
+ </UL>  
+</sidebar>
+<fieldset class="table">
+<div style="overflow-x:auto;">
+  <table>
+    <h2 style="text-align: center; text-decoration: underline;">COMPARISION BETWEEN ENGINEERING YEARS WISE</h2>
+    <tr>
+      <th style="background-color: darkblue;border: 2px solid black;">ENGINEERING BRANCH</th>
+      <th style="background-color: darkblue;border: 2px solid black;">RANK</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2015-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2016-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2017-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2018-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2019-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2020-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2021-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2022-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2023-Points</th>
+      <th style="background-color: darkblue;border: 2px solid black;">2024-Points</th>
+    </tr>
+    <tr>
+      <td>COMPUTER SCIENCE ENGINEERING</td>
+      <td>WORLD'S NO.1</td>
+      <td>80</td>
+      <td>80</td>
+      <td>80</td>
+      <td>87</td>
+      <td>80</td>
+      <td>80</td>
+      <td>85</td>
+      <td>80</td>
+      <td>89</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>MECHANICAL ENGINEERING</td>
+      <td>WORLD'S NO.2</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>ELECTRICAL ENGINEERING</td>
+      <td>WORLD'S NO.3</td>
+      <td>77</td>
+      <td>74</td>
+      <td>74</td>
+      <td>74</td>
+      <td>77</td>
+      <td>70</td>
+      <td>70</td>
+      <td>77</td>
+      <td>79</td>
+      <td>79</td>
+    </tr>
+  </table>
+</div>
+</fieldset>
+<h2 style="color: black; font-weight:900PX; font-size:xx-large;text-align: center; text-decoration: underline;">INFORMATION ABOUT COMPUTER SCIENCE ENGINEERING</h2>
+<div class="container">
+<div class="CONTENT" style=" color:purple ;font: 1em sans-serif; font-size: 20px;"> BRANCH SYSTEM AND SUBJECT DETAILS:
+<p style="color:brown;">B.Tech Computer Science and Engineering is a four-year undergraduate program designed to teach all theoretical aspects of computer science and develop necessary problem-solving skills using computer science. This is one of the most popular specialties in engineering. 
+  BTech CSE Core subjects are Computational Mathematics, High Performance Computing, Intelligent Computing, Scientific Visualization, Computational Optimization etc. BTech CSE elective subjects are Software Reliability, VLSI Design, Object Oriented System Design, Artificial Intelligence, Modeling and Simulation, Digital Communication etc.
+  See Also: BTech Course DetailS.
+  BTech CSE Lab subjects are Data Structures & Algorithms Lab, Object-Oriented Programming Lab, Java Programming Lab, Algorithms Lab, Database Management Systems Lab, Networking Lab, Microprocessor and Microcontroller Lab, Operating System Lab, Computer Organisation Lab etc. Check: All Full Forms of CSE Course.</p>
+  <H3 style="text-align: center; font: 1em sans-serif;font-size: 30px;text-decoration: underline;">Table of Contents </H3>
+ <H4 style="text-align: center;font: 1em sans-serif; font-size: 30px; text-decoration: solid;"> BTech CSE Syllabus </H4>
+ <table>
+	<tbody>
+		<tr>
+			<th style="background-color: aqua; text-align: center;    border: 2px solid black;">Semester I</th>
+			<th style="background-color:darkcyan ; text-align: center; border: 2px solid black">Semester II</th>
+		</tr>
+		<tr>
+			<td>English</td>
+			<td>Mathematics II</td>
+		</tr>
+		<tr>
+			<td>Mathematics I</td>
+			<td>Discrete Structures</td>
+		</tr>
+		<tr>
+			<td>Applied Physics</td>
+			<td>Data Processing</td>
+		</tr>
+		<tr>
+			<td>C &amp; Data Structures</td>
+			<td>Logic Theory</td>
+		</tr>
+		<tr>
+			<td>Engineering Drawing Practice</td>
+			<td>IC Application</td>
+		</tr>
+		<tr>
+			<td>Semiconductor Devices and Circuits</td>
+			<td>Managerial Economics and Accountancy</td>
+		</tr>
+		<tr>
+			<td>Computers and Information Technology</td>
+			<td>Linear and Digital ICs Applications</td>
+		</tr>
+		<tr>
+			<th style="background-color: aqua; text-align: center;    border: 2px solid black;">Semester III</th>
+			<th style="background-color:darkcyan ; text-align: center; border: 2px solid black">Semester IV</th>
+		</tr>
+		<tr>
+			<td>Probability and Statistics</td>
+			<td>Operations Research</td>
+		</tr>
+		<tr>
+			<td>Electrical Technology</td>
+			<td>Data Communications</td>
+		</tr>
+		<tr>
+			<td>Computer Organization</td>
+			<td>Theory of Computation</td>
+		</tr>
+		<tr>
+			<td>Operating Systems</td>
+			<td>System Programming</td>
+		</tr>
+		<tr>
+			<td>Design and Analysis of Algorithms</td>
+			<td>Interfacing Through Microprocessors</td>
+		</tr>
+		<tr>
+			<td>Object-Oriented Programming</td>
+			<td>Principles of Programming Languages</td>
+		</tr>
+		<tr>
+			<th style="background-color: aqua; text-align: center;    border: 2px solid black;" >Semester V</th>
+			<th style="background-color: darkcyan; text-align: center; border: 2px solid black;">Semester VI</th>
+		</tr>
+		<tr>
+			<td>Computer Architecture</td>
+			<td>Artificial Intelligence</td>
+		</tr>
+		<tr>
+			<td>Data Mining</td>
+			<td>Wireless Network</td>
+		</tr>
+		<tr>
+			<td>Computer Network</td>
+			<td>Compiler Design</td>
+		</tr>
+		<tr>
+			<td>Neuro-Fuzzy</td>
+			<td>Computer Graphics</td>
+		</tr>
+		<tr>
+			<td>Data structures and Algorithms</td>
+			<td>Information Storage Management</td>
+		</tr>
+		<tr>
+			<td>Database Information System</td>
+			<td>Implementation of Programming Languages</td>
+		</tr>
+		<tr>
+			<th style="background-color: aqua;text-align: center;     border: 2px solid black; ">Semester VII</th>
+			<th style="background-color: darkcyan;text-align: center;  border: 2px solid black">Semester VIII</th>
+		</tr>
+		<tr>
+			<td>Software Engineering</td>
+			<td>Simulation and Modeling</td>
+		</tr>
+		<tr>
+			<td>Distributed Systems</td>
+			<td>Pattern Recognition</td>
+		</tr>
+		<tr>
+			<td>Java Programming</td>
+			<td>Mobile Computing</td>
+		</tr>
+		<tr>
+			<td>Image Processing</td>
+			<td>Computer Communication</td>
+		</tr>
+		<tr>
+			<td>Neural Networks</td>
+			<td>Project Management</td>
+		</tr>
+		<tr>
+			<td>Visual Programming</td>
+			<td>Formal Languages and Automata Theory</td>
+		</tr>
+	</tbody>
+</table>
+ <h5>BTech CSE Subjects </h5>
+ <h5> BTech CSE syllabus is spread across 4 semesters. Each of the subjects of BTech CSE subjects are explained below :</h5>
+  
+ <h6> BTech CSE First Year Subjects</h6>
+<p style="color: slategray; font: 1em sans-serif;">  English: This subject aims to develop general language skills through listening, speaking, reading and writing, and to provide an opportunity to acquire information and expertise in the English language
+  Mathematics: There are certain subjects in mathematics that relate only to computer science and computer programming, such as calculus, probability, statistics, linear algebra, and linear programming.
+  Discrete Structures: Discrete structures are the studies of mathematical structures that can be considered "discrete" rather than "continuous". 
+  Applied Physics: Applied physics is the application of physics to help people and solve problems. Applied physicists use physics or conduct physical research to develop new techniques or solve technical problems.
+  Data Processing: Data processing, the processing of data by a computer. This includes changing unprocessed data into a machine-readable format, routing data through the CPU and memory to output devices, and formatting or otherwise modifying the output.
+  See Also: </p>
+  
+ <h6> Basic Computer Course Syllabus	Computer Courses After 12th </h6>
+<h6> BTech CSE Second Year Subjects </h6>
+ <p style="color: slategray; font: 1em sans-serif;">  Probability and Statistics: Probability deals with predicting the probability of future events while statistics deals with analyzing the frequency of past events. 
+  Operations Research: Operations research, often abbreviated as OR, is a discipline concerned with the development and application of analytical methods to improve decision making.
+  Electrical Technology: Electrical/Electronic Engineering Technology is a field of engineering technology that implements and applies the principles of electrical engineering. 
+  Data Communications: Data transmission or digital communication is the transmission and reception of data in the form of a digital bit stream or a digitized analog signal transmitted over a point-to-point or point-to-point communication channel.
+  See Also </p>
+  
+  <h6> Computer Science Courses	Computer Application Courses </h6>
+  <h6>  BTech CSE Third Year Subjects </h6>
+ <p style="color: slategray; font: 1em sans-serif;"> Computer Architecture: In computer engineering, computer architecture is the description of the structure of a computer system made up of components. 
+  Artificial Intelligence: The replication of human intelligence functions by machines, particularly computer systems, is known as artificial intelligence. Expert systems, natural language processing, speech recognition, and computer vision are some examples of specific uses of AI.
+  Data Mining: Data mining is the process of extracting and discovering patterns from large data sets using methods that intersect machine learning, statistics, and database systems.
+  Wireless Network: Wireless networking is a way for homes, telecommunications networks, and enterprise installations to bypass the costly process of running cables inside buildings and using them as links between different equipment locations.
+  See Also:
+  </p>
+ <h6>  Computer Programming Courses	Computer Operator Courses </h6>
+ <h6> BTech CSE Fourth Year Subjects .</h6>
+ <p style="color: slategray; font: 1em sans-serif;"> Software Engineering: Software engineering is a systematic engineering approach to software development. A software engineer is someone who applies software engineering principles to design, develop, maintain, test, and evaluate computer software.
+  Simulation and Modeling: Modeling and simulation is the use of models as a basis for simulation to develop data used in making business or technical decisions. 
+  Distributed Systems: A distributed system is one in which components reside on various networked computers that communicate with each other and coordinate their actions by exchanging messages from any system. 
+  Pattern Recognition: Pattern recognition is a data analysis method that uses machine learning algorithms to automatically detect patterns and regularities in data. Pattern recognition systems can quickly and accurately recognize familiar patterns.</p>
+ </p>
+</div>
+<div><h4>ADVANTAGES:</h4>
+  <p style="color: slategray; font: 1em sans-serif;"> the it department is certainly not saturated and there is a high  demand for quaified it specialist. computer  science  graduates need jobs as software engineers,hardware engineers ,application oe web developers,system architects ,project engineers , software testers,and many other .in this engineering you develops  skill and performances in our computer . best Engineering keepitup!</p>
+<H5 style=" color: darkblue; font: 1em sans-serif;">  Placements: </H5> <p style="color: slategray; font: 1em sans-serif;"> Though it equally depends on the student as it does on branch. Many a times highest packages are secured by other branches. But cse gives an edge in the scenario of most jobs being IT oriented in present.
+<H5 style=" color: darkblue; font: 1em sans-serif;"> Curriculum:</H5>   <p style="color: slategray; font: 1em sans-serif;"> it is not much but yes easier than the core engineering counterparts such as mechanical and electrical.
+<H5 style="font: 1em sans-serif; color: darkblue;">  Leisure time:</H5> <p style="color: slategray; font: 1em sans-serif;"> obviously in case of cse one does not actually need to involve in field engineering. One can sit in his habitat to do his stuff and therefore cse students personally enjoy leisure.
+<H5 style="font: 1em sans-serif; color: darkblue;">  Scope:</H5>        <p style="color: slategray; font: 1em sans-serif;">yeah i know the most cliche word an engineer might listen. But yeah cse has been and will be prosperous in future as well. It is the only evergreen branch in india. Jobs for a programmer or coder are nowhere near end."
+<P style="color: slategray; font: 1em sans-serif;">You get to learn most amazing technologies, most versions of which would be available for free as open source which is one of the biggest online community now for learning anything and everything known about computers or related tech
+  This branch attracts most of the highest paying jobs or to say higher chances of getting a job in worst scenarios
+  With most of the companies focusing heavily on digital, you get to work on coolest technologies and products on your jobs like Artificial Intelligence — Natural Language Processing, Machine Learning and help build coolest gadgets like Virtual Reality or Augmented Reality headsets and much more. Everything non-living thing would become smart in next few years and would require someone with skills to write a code. You would be in demand
+  Ability to apply logics and write algorithms help you most efficiently structure your thoughts not only while writing computer codes but also in real life scenarios
+  There is high probability that you guys would be writing the future for the world.Computer Science is your standard generic computer degree. It could be just about anything you want it to be. Not a bad degree to have at all.I have gotten from different understudies I would state that the fundamental contrasts between the two orders lie in the courses required. When you take classes with a PC designing tack, you will see electrical building classes, for example, advanced rationale and circuits. Similarly as with software engineering, you will likewise need to take question situated programming classes, perhaps not calculations or combinatorics. The activity of a PC build certainly includes working with programming however you should likewise be knowledgeable in equipment and principals identified with electrical engineering.Take this illustration. As a PC build your activity could be to tweak a touch screen, this would clearly include input from an end client. Your activity could be to outline the equipment and streamline the responsiveness of the touch work for the end client. This would include both equipment and programming related modifications. PC designers will have a work environment advantage with regards to equipment related circumstances. Besides, it would appear to be likely that a PC specialist could land a position as an electrical designer on the off chance that they so pick in light of the courses they take. I would state PC engineers have equipment information to convey to the table more so than the individuals who major in software engineering.</P>
+</div>
+<div><h4>DISADVANTAGES:</h4>
+  <p>
+    <h5 style="color: slategray; font: 1em sans-serif;">Physically:</h5>
+<p style="color: slategray; font: 1em sans-serif;">
+    You have sit a lot in a certain position. In fact, you can't really work without sitting. This causes different kind of health issues like back problems, posture issues etc.
+    You have to type a lot hence carpal tunnel syndrome : Carpal Tunnel Syndrome-Topic Overview
+    You have to stare at screen most of your day hence your eyes get affected. Your eyesight can get weaker. Youight get headaches and what not.
+    Due to the nature of the job, you don't get much exercise during work as opposed to a wood cutter or a laborer etc. So you have to make extra effort to make time for exercise otherwise you get problems like being over weight and the diseases associated with being over weight like heart problems, high blood pressure etc.
+    </p>
+    <h5 style="color:darkblue; font: 1em sans-serif;">  Mentally:</h5>
+    
+   <p style="color: slategray; font: 1em sans-serif;"> If you love your job and are good at it, it will consume you mentally. You will be thinking about code, algorithms, solutions to problems even in your sleep.
+    You might wake up in the middle of the night with a breakthrough solution to a problem you were having for last few days. </p>
+    <h5 style="color: darkblue; font: 1em sans-serif;"> Emotionally:</h5>
+    
+    <p style="color: darkblue; font: 1em sans-serif;">This is a very important one in my opinion.
+    
+    You lose the ability to sympathize let alone empathize with computer illiterate people.
+    You find yourself screaming at people at phone at technical helplines when start to tell your absurd reasons as to why my internet is not working properly.
+    You stop suffering fools who think an iPhone is better than an Android phone because it looks and feels cool ( if you see latest models of Android phones, iPhone looks like a knockoff in front of them)
+    You start taking it to your heart when someone says a Mac is better than a PC because it's easier to use (in my experience, it's the opposite)
+   You start going crazy when someone claims that his graphics card is better than mind because it has more GBs (he doesn't even know GBs of what exactly?)
+   </p>
+    <h5 style="color: darkblue; font: 1em sans-serif;">Socially:</h5>
+    
+   <p style="color: slategray; font: 1em sans-serif;"> Since most of the day you are in front of a computer, one way or the other, your social life suffers.
+    You start to prefer virtual world over real world because you can work and socialize at the same time without leaving your table/desk.
+    If you do not live in the US and work remotely, it's possible that you have to work in the US timezone. This means that your day becomes night and night becomes day. So you are asleep when others are awake. This reduces your chances of social life greatly."</p>
+</p>
+  </div>
+<div class="floating-box" style="border-radius:10% ;">PLACEMENT:
+<p style="color: slategray; font: 1em sans-serif;">Job options after BTech Computer Science include Testing Engineer, Computer Engineer, Multimedia Programmer, Full Stack Developer, and many other jobs in both public and private sectors.
+
+Candidates having a BTech Computer Science degree can work in some well-known sectors like IT firms, IT departments, tourism industries, colleges, universities, etc. Some of the top recruiting companies for BTech Computer Science graduates are Wipro, Amazon, Infosys, TCS, HCL, Google, etc. The average salary of a BTech Computer Science graduate ranges from INR 4 to INR 10 lakhs.</p>
+</div>
+<div class="floating-box" style="border-radius:10% ;">JOBS:
+<p>                  
+  <li>Mobile App Developer	     </li>
+  <li>Desktop Engineer          </li>
+  <li>Computer Network Architect</li>
+  <li>Web Administrator         </li>
+  <li>Data Operator	           </li>
+  <li>Java Developer	           </li>
+  <li>System Analyst	           </li>
+  <li>UI Developer	             </li>
+  <li>Cyber Security	   </li>     
+  <li>Professor	 </li>
+  <li>Software Engineer	 </li>
+  <li>Computer Engineer	 </li>
+  <li>Software Developer </li>
+  <li>Data Analyst     </li></p>
+</div>
+<div class="floating-box" style="border-radius:10% ;">COMPANIES:
+  <P>
+    <li>GOOGLE </li>
+  <li> MICROSOFT     </li>
+  <li>AMAZON         </li>
+  <li>FLIPKART</li>
+  <li> DELOITTE     </li>
+  <li>HP          </li>
+  <li>TATA CONSULTANCY SERVICES          </li>
+  <li>CONGNIZANT          </li>
+  <li>INTEL             </li>
+  <li>SAMSUNG   </li>     
+  <li>WIPRO</li>
+  <li>ORACLE	 </li>
+  <li>INFOSYS </li>
+  <li>GOLDEN SACHS</li>
+  <li>MINDTREE   </li></p></p>
+</div>
+<div class="floating-box" style="border-radius:10% ;">ASSIGNMENT/PROJECT"
+<p>
+  <li> INSTAGRAM CLONE</li>
+  <li> WEB DEVELOPMENT PROJECT</li>
+  <li> BOOK FOR FREE TRIAL</li>
+  <li> DATA BASES</li>
+  <li> CHATBOT</li>
+  <li> LIBRARY MANAGEMENT</li>
+  <li> BIOMETRIC AUTHENTICATION</li>
+  <li> ELECTION ANALYSIS</li>
+  <li>CHAT APP</li>
+  <li>HEALTH ADMINISTRATION</li>
+  <li>ANDROID BATTERY SERVER</li>
+  <li> NEWS AGGREGATOR</li>
+</p>
+</div>
+<div class="floating-box" style="border-radius:10% ;">INTERVIEW:
+  <li>*Update your resume* </li>
+  <p style="color: slategray; font: 1em sans-serif;">   - Make sure your resume is up-to-date, clear, concise and highlights your skills and experience. Tailor it to the position you're applying for, and make sure it's free of spelling and grammatical errors.
+  </p> <li>  *Research the company* 
+  </li>
+  <p style="color: slategray; font: 1em sans-serif;">- Before the interview, research the company you're applying to. Understand their products, services, history, culture, and vision. This will help you understand the company's needs and tailor your responses to the interviewer's questions.
+</p> <li> *Practice technical skills* 
+  </li>  <p style="color: slategray; font: 1em sans-serif;">- Make sure you're familiar with the technical skills required for the position. You could practice coding challenges, algorithms, and data structures to sharpen your skills.
+</p> <li> *Prepare for behavioral questions* 
+  </li>   <p style="color: slategray; font: 1em sans-serif;">- Behavioral questions are used to understand your approach to problem-solving, teamwork, and leadership. Prepare answers to common behavioral questions such as "Tell me about a time when you had to work with a difficult team member" or "Describe a situation where you had to use your communication skills to resolve a conflict."
+</p>  <li> *Dress professionally* 
+  </li>   <p style="color: slategray; font: 1em sans-serif;">- Make sure you look professional and well-groomed for the interview.</p>
+</div>
+<div class="floating-box" style="border-radius:10% ;">KNOWLEDGE/SCOPE:
+  <p style="color: slategray; font: 1em sans-serif;">The scope of computer science engineering is vast because:
+  
+  <LI> Need for new devices and software:</LI>
+    <P style="color: slategray; font: 1em sans-serif;"> With the advancement of technology, the world is paralyzed without innovative devices coming up. That is the reason why there will be the need for immense manpower who are skilled in the field of computer science.
+    </p>
+      <li>  IT hubs require experts:</li>
+   <p style="color: slategray; font: 1em sans-serif;">  With every passing date, the number of software companies and IT hubs like Silicon Valley is increasing, and therefore there is an increasing demand for skilled professionals and CSE experts.
+    Experts required for cloud computing: With the trending concepts like cloud computing, the future technologies are depending on it and most of the companies are looking for a specialist who can hand give the entire segment of cloud computing and help in the progression of the business.
+    Job in telecommunications: With the Rise in digitalization, telecommunication systems are depending on computer services and that is the reason why computer engineers are employed in this field.
+  </p>
+  <li>Transportation services: </li>
+  <p style=" color:slategray; font: 1em sans-serif;">With the resurfacing of the GPS services transportation services are in dire need of computer science engineers.</p>
+  <li> The manufacturing unit of computers:</li>
+  <p style="color:slategray; font: 1em sans-serif;"> Needless to say, no one other than the computer science engineers will know how to build computers in the best possible manner. There is a reason why most of the major Fortune 500 computer manufacturing companies are looking forward to hiring more and more efficient computer science engineers.</p>
+</div>
+</div>
+<fieldset style=" font: 1em sans-serif; font-weight: 900; color:hotpink; font-variant: small-caps;">
+<ul style=" color: #333;"> COMPUTER SCIENCE ENGINEERING:
+<li>artificial entelligence engineering </li>
+<li>software engineering</li>  
+<li>data science engineering</li>
+<li>cloud computing engineering</li>
+<li>network area engineering</li>
+</ul>  
+</fieldset>
+<div class="container">                 
+  <ul class="pager">
+    <li><a  style="color: red;"   href="#">Previous</a></li>
+    <li><a style="color:rgb(4, 81, 235);"   href="#">Next</a></li>
+  </ul>
+  </div>
+  <footer class="footer mt-auto py-3" style="padding: 9px; background-color: #333; text-align: center; width:1600px;" >
+    <div class="container">
+      <span class="text-muted">Copyright@v.k.p</span>
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+</html>
