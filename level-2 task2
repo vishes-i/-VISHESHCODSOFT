@@ -1,0 +1,2397 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact  form</title>
+<style>
+    * {box-sizing: border-box}
+body{
+   display:block;margin-left:300px ; margin-right:300px ;}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.a3{
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.a3,.a4{ text-align: center;
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.a3{color: black; font: 1em sans-serif; font-weight: bolder; font-variant: small-caps; background-color:red; border: 5px solid red;padding:10px;text-decoration: none;}
+.a4{color: black ;background-color:green; font: 1em sans-serif;font-weight: bolder;font-variant: small-caps; border:5px solid green; padding: 10px;text-decoration: none; }
+/* Change styles for cancel button and signup button on extra small scree
+@media screen and (max-width: 300px) {
+  .cancvvelbtn, .signupbtn {
+    widvvth: 100%;
+  }
+
+    </style>
+</head>
+    <body>
+         <form action="action_page.php" style="border:1px solid #ccc">
+     <div class="container">
+       <h1>Sign Up</h1>
+       <img src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-05 at 09.19.08_75936d72.jpg" alt=" logo" style="width:200px; height: 200px; margin-left:2
+       
+       50px ; margin-right: 500px;">
+       <p>Please fill in this form to create an account.</p>
+       <hr>
+   
+       <label for="mobile number">MOBILE NUMBER:
+       <input type="text" placeholder="Enter MOBILE NUMBER" name="MOBILE NUMBER" required>
+        </label>
+
+       <input type="checkbox" placeholder="verify" name="verify"required>
+       <label for="verify mobile number"> GET OTP:</b></label>
+       <button onclick="myFunction()">GET-OTP</button>
+
+<script>
+function myFunction() {
+  alert("YOUR  ONE TYPE OTP IS :234567");
+}
+</script>
+<input type="TEXT"  value="OTP" class="verify your mobile number GET OTP"required>
+<label for="STUDENT"><b>STUDENT-NAME:</b></label>
+
+<input type="text" placeholder="Enter name" name="student name" required>
+ <label for="SCHOOL"><b>SCHOOL/COLLEGE-NAME:</b></label>
+<input type="text" placeholder="Enter SCHOOL" name="sCHOOL name" required>
+
+    
+       
+
+       <label for="email"><b>Email:</b></label>
+       <input type="text" placeholder="Enter Email" name="email" required>
+   
+       <label for="psw"><b>Password:</b></label>
+       <input type="password" placeholder="Enter Password" name="psw" required>
+   
+       <label for="psw-repeat"><b>Repeat Password:
+        
+        </b></label>
+       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+   
+       <label>
+         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+       </label>
+   
+       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+   
+       <div class="clearfix">
+       <a  class="a3" href="file:///C:/Users/adity/signup.html">Cancel</button>
+         <a class="a4" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/quiz.html" >Sign Up</a>
+       </div>
+     </div>
+   </form>
+</div>
+    </body>
+    </html>
+  <!-------------------------------------------------------------------------------------------------------->
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0" />
+   <style>
+    
+
+ * {
+     font-family: Georgia, Times, "Times New Roman", serif;
+ }
+
+ .quiz,
+ .scores {
+     margin: 50px auto 0 auto;
+     max-width: 400px;
+ }
+
+ #top {
+     color: red;
+ }
+
+ .containerNew {
+     border: 5px solid;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 580px;
+     width: 50%;
+     transform: translate(-50%, -50%);
+     padding: 10px;
+ }
+
+ p {
+     margin: 15px 15px;
+ }
+
+ .landing {
+     text-align: center;
+ }
+
+ .scoresHeader {
+     position: absolute;
+     top: 15px;
+     left: 15px;
+ }
+
+ .timer {
+     position: absolute;
+     top: 15px;
+     right: 15px;
+ }
+
+ button {
+     display: inline-block;
+     margin: 10px;
+     cursor: pointer;
+     color: #fff;
+     background-color: #52865a;
+     border-radius: 5px;
+     border: 0;
+     padding: 20px;
+ }
+
+ button:hover {
+     background-color: #2a8d12;
+ }
+
+ .options button {
+     display: block;
+ }
+
+ input[type="text"] {
+     font-size: 100%;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .feedback {
+     font-style: bold;
+     font-size: 120%;
+     margin-top: 20px;
+     padding-top: 15px;
+     color: #fff;
+     border-top: 2px solid #4B0082;
+ }
+
+ ol {
+     padding-left: 15px;
+     max-height: 600px;
+     overflow: auto;
+ }
+
+ li {
+     padding: 5px;
+     list-style: decimal inside none;
+ }
+
+ li:nth-child(odd) {
+     background-color: #dfdae7;
+ }
+
+ @media screen and (max-width: 768px) {
+     .containerNew {
+         width: 80%;
+     }
+ }
+
+ @media screen and (max-width: 575px){
+     .containerNew {
+         width: 90%;
+     }
+
+     .quiz,
+     .scores {
+         max-width:90%;
+}
+ }  </style>
+   
+    <title>Code Quiz</title>
+</head>
+
+<body style="background-color: antiquewhite;">
+    <div class="containerNew" style="background-color:slategrey;  height:700PX; border-radius:10%; margin-top: 100PX;">
+        <header>
+            <div>
+                <a href="./highscore.html">
+                    <button class="scores-header" 
+                            id="view-high-scores" style="margin-left: 60PX; background-color: #4B0082;">
+                        View Highest Scores
+                    </button>
+                </a>
+            </div>
+
+            <div class="timer" >
+                <button
+              style="background-color: #4B0082; color:antiquewhite;" >
+                    Time:
+                    <span id="timer">
+                        20 min
+                    </span>
+              
+            </button>
+            </div>
+        </header>
+
+        <main class="quiz">
+            <div id="quiz-start">
+                <div class="landing" 
+                     id="start-screen">
+                    <h1 id="top">
+                    GENERAL  QUESTION  COMPUTER SCIENCE ENGINEERING RELATED TO FULL STACK DEVELOPMENT PROGRAMING
+                    </h1>
+                    <h1>
+                       CODING QUIZ
+                    </h1>
+                    <p  style="color: black; font: 1em sans-serif;">
+                        Quite simply explained, a quiz is a question and answer game in which knowledge is tested in a creative and playful way in the form of a trivia quiz or competencies and skills in a personality quiz over the course of several questions.
+                        
+                        
+                        
+                        
+                        
+                    </p>
+                    <button id="start">
+                       <a  style="color:black   ;font-family: 'Times New Roman', Times, serif;font-weight: bolder; font-size: xx-large;"   href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/fdfgjg.html">START QUIZ</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options">
+                </div>
+            </div>
+
+            <div class="hide" id="quiz-end">
+                <h2>All Done!</h2>
+                <p>Your final score is:
+                    <span id="score-final">
+                    </span>
+                </p>
+                <p>
+                    Please enter your name:
+                    <input type="text" 
+                           id="name" 
+                           max="3" />
+                    <button id="submit-score">
+                        Submit
+                    </button>
+                </p>
+            </div>
+
+            <div id="feedback" 
+                 class="feedback hide">
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+    <footer style="background-color: black; color: #4B0082; margin-top: 1000PX; padding: 10PX;text-align: center;"><P>COPYRIGHT@VISHESHK.P56466</P></footer>
+</body>
+
+</html
+<!----------------------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+<h1 style="background-color:whitesmoke ; color: black; text-decoration: solid; text-align: center; ">
+ FULL STACK WEBDEVELOPMENT QUIZ QUESTION
+</h1>
+<p  style="margin-left:100PX ;  font-family: 'Times New Roman', Times, serif; font-weight: 900; font-size: xx-large;">MULTIPLE CHOICE QUESTION </p>
+<FORM action="/action.ph"   style="background-color: aquamarine;  margin-left: 60px;">
+  
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+<h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION1: What does  the term "full stack Development " refer to?.</h4>
+<fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+<label>
+  <p style=" background-color: blue;">  
+  <INPUT type="radio" value="quiz" class="quiz" >  A:Development that involves stack data structures.
+    </p>
+    <p style=" background-color: blue;">  
+    <INPUT type="radio" value="quiz" class="quiz" >  B:Development that involves  front-end and back-end  programing.
+      </p>
+      <p style=" background-color: blue;">  
+      <INPUT type="radio" value="quiz" class="quiz" > C:Development that involves only  backend  programming.
+        </p>
+        <p style=" background-color: blue;">  
+        <INPUT type="radio" value="quiz" class="quiz" > D: None of the above
+          </p>
+           </label>   
+          </fieldset>
+</fieldset>
+<button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/question%201.html
+  ">NEXT QUESTION</a></button>                                                                                                                                                                                                                              
+      
+    </body>
+</html>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+<fieldse >
+ <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+ <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+ <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+</fieldset>
+<BR>
+    <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+          <h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 2:Which of the following is not a front-end  technology? . </h4>
+          <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+            <p style=" background-color: blue;">  
+            <label>
+              <INPUT type="radio" value="quiz" class="quiz" >  A:Html
+                </label>
+                </p>
+                <p style=" background-color: blue;">  
+                <INPUT type="radio" value="quiz" class="quiz" >  B:Css
+                  </p>
+                  <p style=" background-color: blue;">  
+                  <INPUT type="radio" value="quiz" class="quiz" > C:Javascript
+                    </p>
+                    <p style=" background-color: blue;">  
+                    <INPUT type="radio" value="quiz" class="quiz" > D:Sql
+                       </label> 
+                       </p>  
+                      </fieldset>
+                    </fieldset>
+
+                    <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/Q.html">NEXT QUESTION</a></button>
+
+</body>
+</html>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+<fieldse >
+ <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+ <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+ <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+</fieldset>
+<BR>
+    <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+        <h4 style=" font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 3:The purposes of the  front-end framework in full stack development is . </h4>
+        <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+          <p style=" background-color: blue;">  
+          <label>
+            <INPUT type="radio" value="quiz" class="quiz" >  A:To provide the client -side interface
+              </label>
+              </p><p style=" background-color: blue;">  
+              <INPUT type="radio" value="quiz" class="quiz" >  B:To manage database
+                </p>
+                <p style=" background-color: blue;">  
+                <INPUT type="radio" value="quiz" class="quiz" > C:To reduce  the server load
+                  </p>
+                  <p style=" background-color: blue;">  
+                  <INPUT type="radio" value="quiz" class="quiz" > D:To send https requests
+                     </label>  
+                     </p> 
+                    </fieldset>
+    </fieldset>
+
+                    <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href=" file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/qh.html">NEXT QUESTION</a></button>
+
+</body>
+</html>
+<!---------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+<fieldse >
+ <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+ <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+ <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+</fieldset>
+<BR>
+    <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+        <h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 4:Among which of the following programming lanuages is used as a server -side lanuage.  </h4>
+        <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+          <p style=" background-color: blue;">  
+          <label>
+            <INPUT type="radio" value="quiz" class="quiz" >  A:Python
+              </label>
+              </p>
+              <p style=" background-color: blue;">  
+              <INPUT type="radio" value="quiz" class="quiz" >  B:C++
+                </p>
+                <p style=" background-color: blue;">  
+                <INPUT type="radio" value="quiz" class="quiz" > C:Javascript
+                  </p>
+                  <p style=" background-color: blue;">  
+                  <INPUT type="radio" value="quiz" class="quiz" > D:Both A and C
+                     </label> 
+                     </p>  
+                    </fieldset>
+    </fieldset>
+            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/zsd.html">NEXT QUESTION</a></button>
+
+</body>
+</html>
+<!--------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+<fieldse >
+ <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+ <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+ <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+</fieldset>
+<BR>
+    <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+        <h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 5:What is a front-end framework?. </h4>
+        <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+          <p style=" background-color: blue;">  
+          <label>
+            <INPUT type="radio" value="quiz" class="quiz" >  A: A development platform for developing user-interface for software applications
+           </label>
+           </p>
+           <p style=" background-color: blue;">     
+              <INPUT type="radio" value="quiz" class="quiz" >  B: A database to store and manage the data of an application
+                </p>
+                <p style=" background-color: blue;">  
+                <INPUT type="radio" value="quiz" class="quiz" > C:  A development platform for writing server-side logic
+                  </p>
+                  <p style=" background-color: blue;">  
+                  <INPUT type="radio" value="quiz" class="quiz" > D:None of the above
+                    </p>
+                     </label>   </fieldset>
+    </fieldset>
+            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/dfsd.html">NEXT QUESTION</a></button>
+
+</body>
+</html>
+<!------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+ 
+   <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+    <h4 style="font-weight:bolder; font-size: xx-large; font-family: 'Times New Roman', Times, serif;"> QUESTION 6:Database in Full stack development is used to ____.
+    </h4>
+    <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+    <p style=" background-color: blue;">  
+      <label>
+        <INPUT type="radio" value="quiz" class="quiz" >  A: Styling HTML pages
+      </label>
+    </p>
+    <p style=" background-color: blue;">  
+          <INPUT type="radio" value="quiz" class="quiz" >  B:Storing and retrieving data</p>
+            <p style=" background-color: blue;">  
+            <INPUT type="radio" value="quiz" class="quiz" > C: Handling errors on server-side
+              </p>
+              <p style=" background-color: blue;">  
+              <INPUT type="radio" value="quiz" class="quiz" > D:Rendering web pages
+                </p>
+                 </label>   
+                </fieldset>
+            </fieldset>
+            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/dss.html">NEXT QUESTION</a></button>
+            </body>
+            </html>
+<!--------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+ 
+   <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+   <h4 style="font-size: xx-large;font-family: 'Times New Roman', Times, serif;font-weight:bolder;"> QUESTION 7: What is Git?
+</h4>
+<fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+  <p style=" background-color: blue;">  
+  <label>
+    <INPUT type="radio" value="quiz" class="quiz" >  A:Framework
+    </label>
+  </p>
+  <p style=" background-color: blue;">  
+      <INPUT type="radio" value="quiz" class="quiz" >  B:Version control system
+  </p>
+  <p style=" background-color: blue;">  
+        <INPUT type="radio" value="quiz" class="quiz" > C: Database
+          </p>
+          <p style=" background-color: blue;">  
+          <INPUT type="radio" value="quiz" class="quiz" > D:Package manager
+            </p>
+                                             </label>   
+                                            </fieldset>
+            </fieldset>
+            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/dfff8.html">NEXT QUESTION</a></button>
+            </body>
+            </html>
+<!-------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+ 
+   <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+   <h4 style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;font-weight: bolder;"> QUESTION 8: CRUD stands for ____.
+</h4>
+<fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+  <p style=" background-color: blue;">  
+  <label>
+    <INPUT type="radio" value="quiz" class="quiz" >  A: Create, Read, Upload, Delete
+      </label>
+  </p>
+  <p style=" background-color: blue;">  
+      <INPUT type="radio" value="quiz" class="quiz" >  B: Create, Read, Upgrade, Deploy
+        </p>
+        <p style=" background-color: blue;">  
+        <INPUT type="radio" value="quiz" class="quiz" > C:  Create, Remove, Upgrade, Delete
+          </p>
+          <p style=" background-color: blue;">  
+          <INPUT type="radio" value="quiz" class="quiz" > D: Create, Read, Update, Delete
+            </p>
+                                             </label>   
+                                            </fieldset>
+            </fieldset>
+            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/fff9.html">NEXT QUESTION</a></button>
+            </body>
+            </html>
+<!------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+</head>
+
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+ 
+   <fieldset style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+    <h4 style="font-size: xx-large; font-size: xx-large; font-weight: bolder;"> QUESTION 9:  The term "deployment" refers to
+    </h4>
+    <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+      <p style=" background-color: blue;">  
+      <label>
+        <INPUT type="radio" value="quiz" class="quiz" >  A: Running the project on a server to make it accessible to all
+      </label>
+      </p>
+      <p style=" background-color: blue;">  
+    <INPUT type="radio" value="quiz" class="quiz" >  B:Bundling all the project files into a single file
+            </p>
+            <p style=" background-color: blue;">  
+            <INPUT type="radio" value="quiz" class="quiz" > C:Removing unnecessary files
+              </p>
+              <p style=" background-color: blue;">  
+              <INPUT type="radio" value="quiz" class="quiz" > D:Updating existing project
+              </p>
+                                                 </label>   
+                                                </fieldset>
+            </fieldset>
+            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/xsgdf10.html">NEXT QUESTION</a></button>
+            </body>
+            </html>
+<!------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+  <fieldset >
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+   </fieldset>
+<fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+
+
+                                                                                                         
+<h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 10:A web server in Full Stack Development is ____.
+ </h4>
+ <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+  <p style=" background-color: blue;">  
+   <label>
+     <INPUT type="radio" value="quiz" class="quiz" >  A:  Rendering the user interface
+      </label>
+  </p>
+  <p style=" background-color: blue;">  
+ <INPUT type="radio" value="quiz" class="quiz" >  B: Handling client-side interactions
+  </p>
+  <p style=" background-color: blue;">  
+         <INPUT type="radio" value="quiz" class="quiz" > C:  Executing server-side code and processing requests
+           </p>
+           <p style=" background-color: blue;">  
+           <INPUT type="radio" value="quiz" class="quiz" > D: Writing server-side logics
+           </p>
+                                                                                         </label>   
+                                                                                        </fieldset  > 
+</fieldset>   
+                                                                                        <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href=" file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/fsdds11.html">NEXT QUESTION</a></button>                                                                                        
+                                                                                        </body>
+</html>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+    <fieldset >
+        <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+        <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+        <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+       </fieldset>
+       <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+        <h4  style="font-size: xx-large; font-weight: bolder; font-family: 'Times New Roman', Times, serif;"> QUESTION 11:Is JavaScript synchronous or asynchronous?
+        </h4>
+        <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+          <p style=" background-color: blue;">  
+          <label>
+            <INPUT type="radio" value="quiz" class="quiz" >  A:  Synchronous
+              </label>
+          </p>
+          <p style=" background-color: blue;">  
+        <INPUT type="radio" value="quiz" class="quiz" >  B: Asynchronous
+                </p>
+                <p style=" background-color: blue;">  
+                <INPUT type="radio" value="quiz" class="quiz" > C: Both
+                  </p>
+                  <p style=" background-color: blue;">  
+                  <INPUT type="radio" value="quiz" class="quiz" > D: Synchronous but can be used as asynchronous
+                  </p>
+                  </label>   
+                </fieldset>                                                                   </label>   
+           </fieldset>   
+           <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/ghgh12.html">NEXT QUESTION</a>                                                          
+
+<!----------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+
+  
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+ 
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+   <h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 12: SPA stands for ____. 
+  </h4>
+  <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+    <p style=" background-color: blue;">  
+    <label>
+      <INPUT type="radio" value="quiz" class="quiz" >  A: Standard Page Application
+        </label>
+    </p>
+    <p style=" background-color: blue;">  
+  <INPUT type="radio" value="quiz" class="quiz" >  B: Single Page Application
+          </p>
+          <p style=" background-color: blue;">  
+          <INPUT type="radio" value="quiz" class="quiz" > C: Smart Protocol Authentication
+            </p>
+            <p style=" background-color: blue;">  
+            <INPUT type="radio" value="quiz" class="quiz" > D:Scalable Performance Architecture
+              </p>
+            </label>   
+          </fieldset> 
+        </fieldset>
+        <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/asads13.html"
+          ">NEXT QUESTION</a></button>                                                                                                                                                                                                   
+                                                                  
+    </body>
+</html>
+<!------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+
+  <fieldset >
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+   </fieldset>
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+
+        <h4 style="font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-size: xx-large;"> QUESTION 13:Amongst which of the following is a back-end framework in Python?
+       </h4>
+       <fieldset  style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+        <p style=" background-color: blue;">  
+         <label>
+           <INPUT type="radio" value="quiz" class="quiz" >  A: Django
+            </label>
+        </p>
+        <p style=" background-color: blue;">  
+       <INPUT type="radio" value="quiz" class="quiz" >  B: Flask
+               </p>
+               <p style=" background-color: blue;">  
+               <INPUT type="radio" value="quiz" class="quiz" > C:Both A and B
+                 </p>
+                 <p style=" background-color: blue;">  
+                 <INPUT type="radio" value="quiz" class="quiz" > D:None of the above      
+                  </p>                                                                  
+                    </fieldset>
+                </fieldset>
+                <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/sdyerx5y14.html"
+
+                  >NEXT QUESTION</a></button>                                                                                                                                                                                                                                        
+                        
+
+    </body>
+</html>
+<!---------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+<FORM action="/action.ph"   style="background-color: aquamarine;  margin-left: 60px;">
+
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+  
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+                      <h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 14:Amongst which of the following type of database is used in Full stack development?
+
+                     </h4>
+                     <fieldset  style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+                      <p style=" background-color: blue;">  
+                       <label>
+                         <INPUT type="radio" value="quiz" class="quiz" >  A:Relational
+                          </label>
+                      </p>
+                      <p style=" background-color: blue;">  
+                     <INPUT type="radio" value="quiz" class="quiz" >  B: JSON
+                      </p>
+                      <p style=" background-color: blue;">  
+                             <INPUT type="radio" value="quiz" class="quiz" > C:XML
+                             </p>
+                             <p style=" background-color: blue;">  
+                               <INPUT type="radio" value="quiz" class="quiz" > D: GraphQL    
+                             </p>                           
+                                  </fieldset>
+                                </fieldset>
+                                <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href ="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/gbgtfgtf15.html"
+                                  >NEXT QUESTION</a></button>                                                                                                                                                                 
+                                                                                                                 
+    </body>
+</html>
+<!------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+   
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+           <h4 style=" font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 15:Amongst which of the following protocol is used to exchange the data between client and server?
+           </h4>
+           <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+            <p style=" background-color: blue;">  
+             <label>
+            <INPUT type="radio" value="quiz" class="quiz" >  A: HTTP
+             </label>
+            </p>
+            <p style=" background-color: blue;">  
+        <INPUT type="radio" value="quiz" class="quiz" >  B:TCP/IP
+            </p>
+          <p style=" background-color: blue;">  
+                <INPUT type="radio" value="quiz" class="quiz" > C:SMTP</p>
+                  <p style=" background-color: blue;">  
+                  <INPUT type="radio" value="quiz" class="quiz" > D:FTP    
+                  </p>                         
+                     </fieldset>
+                    </fieldset>
+                    <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/sddfd16.html
+                      ">NEXT QUESTION</a></button>                                                                                                                                                                                                                             
+    </body>
+</html>
+<!-------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+
+
+  
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+                                     
+                     <h4 style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 16: What is the purpose of CSS in Full stack development?  
+                    </h4>
+                    <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+                      <p style=" background-color: blue;">   
+                      <label>
+                     <INPUT type="radio" value="quiz" class="quiz" >  A: To style and format HTML elements
+                      </label>
+                      </p>
+                      <p style=" background-color: blue;">  
+                 <INPUT type="radio" value="quiz" class="quiz" >  B: To manage http request and response
+                         </p>
+                         <p style=" background-color: blue;">  
+                         <INPUT type="radio" value="quiz" class="quiz" > C: To store and retrieve data
+                           </p>
+                           <p style=" background-color: blue;">  
+                           <INPUT type="radio" value="quiz" class="quiz" > D:None of the above 
+                            </p>                     
+                    </fieldset>
+   </fieldset>
+<button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/dsdfdg17.html"
+    >NEXT QUESTION</a></button>                                                                                                    
+                      
+
+    </body>
+</html>
+<!---------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+ <h4  style="font-size: xx-large; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 17:. Which of the following statement is TRUE about AJAX?                       
+ </h4>
+ <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+   <label>
+    <p style=" background-color: blue;">  
+  <INPUT type="radio" value="quiz" class="quiz" >  A:AJAX enables asynchronous data retrieval without reloading the entire page
+   </p>
+   <p style=" background-color: blue;">  
+  <INPUT type="radio" value="quiz" class="quiz" >  B: AJAX improves the design layout
+   </p>
+   <p style=" background-color: blue;">  
+      <INPUT type="radio" value="quiz" class="quiz" > C:AJAX helps in creating dynamic websites
+        </p>
+        <p style=" background-color: blue;">  
+        <INPUT type="radio" value="quiz" class="quiz" > D:  AJAX is a popular query language for Full stack development
+        </p>
+                              </fieldset>
+   </fieldset>
+                              <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/wegrewfr18.html
+                                ">NEXT QUESTION</a></button>                                                                                                                                                                                                                              
+    </body>
+</html>
+<!------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+    <h4 style="font-size: xx-large;font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 18: The role of view in model-view-controller architecture is ____.
+    </h4>
+    <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+      <label>
+        <p style=" background-color: blue;">  
+     <INPUT type="radio" value="quiz" class="quiz" >  A: Displaying data to the user
+        </p>
+        <p style=" background-color: blue;">  
+     <INPUT type="radio" value="quiz" class="quiz" >  B:Optimize database queries
+         </p>
+         <p style=" background-color: blue;">  
+         <INPUT type="radio" value="quiz" class="quiz" > C:Handle client's request
+         </p>
+         <p style=" background-color: blue;">  
+           <INPUT type="radio" value="quiz" class="quiz" > D:Manage server-side routing
+         </p>
+              </fieldset>                    
+</fieldset>
+                              <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/zdcsadf19.html
+                                ">NEXT QUESTION</a></button>                                                                                                                                                                                                                              
+    </body>
+</html>
+<!------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+  
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+            <h4 style="font-size: xx-large;   font-family: 'Times New Roman', Times, serif; font-weight: bolder;"> QUESTION 19: Amongst which of the following is TRUE about model-view-architecture?            
+            </h4>
+            <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+              <label>
+                <p style=" background-color: blue;">  
+             <INPUT type="radio" value="quiz" class="quiz" >  A:The View accesses the data from the Model using AJAX calls 
+                </p>
+                <p style=" background-color: blue;">  
+             <INPUT type="radio" value="quiz" class="quiz" >  B: Model and View are independent and do not communicate directly
+                 </p>
+                 <p style=" background-color: blue;">  
+
+                 <INPUT type="radio" value="quiz" class="quiz" > C: Model and View communicate via Controller
+                   </p>
+                   <p style=" background-color: blue;">  
+                   <INPUT type="radio" value="quiz" class="quiz" > D: Model and View communicate directly
+                   </p>
+                   </fieldset>
+                </fieldset>
+                <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/ssz20.html
+                  ">NEXT QUESTION</a></button>                                                                                                                                                                                                                              
+                   
+    </body>
+</html>
+<!--------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+    <button style="margin-left:160px ; margin-top: 100px; background-color: slategrey;">   <P>TIMER::1:00 MIN</P></button>
+    <button  style="margin-left: 200px; background-color: slategray;"><P> EACH  QUESTION CAN HAVE ONLY ONE MARKS</P></buttone>
+    <button  style="margin-left:200px ; background-color: slategray;">    <P>NO NEGATIVE MARKING</P></Button>
+
+   <fieldset  style="border-color: black; border-radius: 20px; margin-left: 400px; margin-top: 200px; background-color: blueviolet; border: solid black; width: 700px;">
+
+                      <h4 style="font-size: xx-large; font-weight: bolder;  font-family: 'Times New Roman', Times, serif;"> QUESTION 20: Amongst which of the following is not a NoSQL database used in Full Stack Development?
+      
+                      </h4>
+                      <fieldset style=" color: black; font: 1em sans-serif; font-weight: bolder;">
+                        <label>
+                       <p style=" background-color: blue;">  
+                       <INPUT type="radio" value="quiz" class="quiz" >  A: MongoDB
+                        </p>
+                        <p style=" background-color: blue;">  
+                       <INPUT type="radio" value="quiz" class="quiz" >  B: PostgreSQL
+                        </p>
+                        <p style=" background-color: blue;">  
+                           <INPUT type="radio" value="quiz" class="quiz" > C: CouchDB </p>
+                            <p style=" background-color: blue;">  
+                             <INPUT type="radio" value="quiz" class="quiz" > D:  Hadoop
+                             </p>  
+                                </fieldset>
+                            </fieldset>
+                            <button  style="background-color: blue; margin-left:600PX; margin-top:100PX; border-radius:20% ;"> <a style="color: black;" href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/end.html
+                              ">SUBMIT-QUIZ</a></button>                                                                                                                                                                                                                              
+    </body>
+</html>
+<!----------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0" />
+   <style>
+    
+
+ * {
+     font-family: Georgia, Times, "Times New Roman", serif;
+ }
+
+ .quiz,
+ .scores {
+     margin: 50px auto 0 auto;
+     max-width: 400px;
+ }
+
+ #top {
+     color: green;
+ }
+
+ .containerNew {
+     border: 5px solid;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     height: 580px;
+     width: 50%;
+     transform: translate(-50%, -50%);
+     padding: 10px;
+ }
+
+ p {
+     margin: 15px 15px;
+ }
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ button {
+     display: inline-block;
+     margin: 10px;
+     cursor: pointer;
+     color: #fff;
+     background-color: #52865a;
+     border-radius: 5px;
+     border: 0;
+     padding: 20px;
+ }
+
+ button:hover {
+     background-color: #2a8d12;
+ }
+
+ .options button {
+     display: block;
+ }
+
+ input[type="text"] {
+     font-size: 100%;
+ }
+   </style>
+   
+    <title>Code Quiz</title>
+</head>
+
+<body style="background-color: slategrey;">
+   
+    <div class="containerNew" style=" background-color: aquamarine;">
+        <H1 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bolder;">THANK YOU COMPELETING-QUIZ</H1>
+        <header>
+            <div>
+                <a href="./highscore.html">
+                    <button class="scores-header" 
+                            id="view-high-scores">
+                        REVIEW ANSWER
+                    </button>
+                </a>
+            </div>
+
+            <div class="accuracy">
+                <p>
+                    YOUR ACCURACY:
+                    <span id="accuracy">
+                        ---
+                    </span>
+                </p>
+            </div>
+            
+        </header>
+
+                    <h1 id="top">
+                    GENERAL  QUESTION  COMPUTER SCIENCE ENGINEERING
+                    </h1>
+                    <h1>
+                       CODING QUIZ
+                    </h1>
+                    <p>
+                        Try to answer the following
+                        code-related questions with
+                        in the time limit. Keep in
+                        mind that incorrect answers
+                        will penalize your score/time
+                        by sixty seconds!
+                    </p>
+                    <button id="start">
+                       <a  style="color:black ;"   href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/view.html">VEIW YOUR HIGH SCORE<a>
+                    </button>
+                </div>
+            </div>
+</body>
+
+</html
+<!----------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Theme The Band</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+</style>
+<body style="background-color: aquamarine;">
+<H1 style="text-decoration: solid; text-align: center; background-color: rgb(214, 170, 111);"> YOU HAVE SUCCESFULLY COMPLETED YOUR QUIZ</H1>
+<fieldset  style="background-color:green; border-radius: 20%; width:600px; height: 500px; margin-top: 200px; margin-left: 400px;">
+<h2  style="text-align: center; font-family: 'Times New Roman', Times, serif; margin-top: 100PX;">DETAILS ARE GIVEN BELOW</h2>
+<P style=" font-family: 'Times New Roman', Times, serif; text-align: center;">NAME: VISHESH KUMAR PRAJAPATI</P>
+<P style="text-align: center; font-family: 'Times New Roman', Times, serif;">COURSE:FULL STACK WEB DEVELOPMENT</P>
+<P style="text-align: center; font-family: 'Times New Roman', Times, serif;">UNIVERSITY:BABU BANARASI DAS UNIVERSITY</P>
+<P style="text-align: center; font-family: 'Times New Roman', Times, serif;">YOUR SCORE:17</P>
+<P style="text-align: center; font-family: 'Times New Roman', Times, serif;">ACCURACY:00</P>
+<P style="text-align: center; font-family: 'Times New Roman', Times, serif;">ATTEMPTED QUESTION:19</P>
+<P style="text-align: center; font-family: 'Times New Roman', Times, serif;">NON ATTEMPTED QUESTION:1</P>
+</fieldset>
+<footer>
+    <P style="background-color: black; color: blue; text-align: center; margin-top: 100PX; padding: 17PX;">COPYRIGHT@VISHESHK.P56466</P>
+</footer>
+</body>
+</html>
+<!---------------------------------------------------------------------------------------------->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
