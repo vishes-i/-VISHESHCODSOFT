@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .btn{background-color:black ; color: red; border: 0px solid black;}
+  .container{display:inline-flex; flex-direction:row; gap:60px;}
+     .navbar{display:grid; grid-template-columns: repeat(6,1fr); border: 2px solid black; background-color: black; height: 40px; padding: 15px;}
+    .navbar li a:link {
+    color:red;
+}
+
+
+/* visited link */
+.navbar li a:visited {
+    color: green;
+    
+}
+
+/* mouse over link */
+.navbar li a:hover {
+    color: hotpink;
+    display: block; background-color: black;
+} 
+  .main{ 
+    margin-left: 560px;
+   width: 400px;
+   height: 450px;
+   background-color: white;
+   position: absolute;
+   border: 5px solid black;
+   border-radius: 6px; 
+}
+.main input[type='text'] {
+   width: 88%;
+   position: relative;
+   height: 80px;
+   top: 5px;
+   text-align: right;
+   padding: 3px 6px;
+   outline: none;
+   font-size: 40px;
+   border: 5px solid black;
+   display: flex;
+   margin: auto;
+   border-radius: 6px;
+   color: black;
+}
+.bttn input[type='button']{
+   width:90px;
+   padding: 2px;
+   margin: 2px 0px;
+   position:relative;
+   left: 13px;
+   top: 20px;
+   height: 60px;
+   cursor: pointer;
+   font-size: 18px;
+   transition: 0.5s;
+   background-color: #495250;
+   border-radius: 6px;
+   color: white;
+}
+.bttn input[type='button']:hover{
+   background-color: black;
+   color: white;
+}
+.content-section {
+    font-size: 1rem;
+    line-height: 1.6;
+    overflow: hidden;
+}
+ *,*::before, *::after {
+    box-sizing: border-box;
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/* selected link */
+.navbar li a:active {
+    color: blue;
+}
+<!--sidebar-->
+ /* unvisited link */
+ .sid-bar li a:link {
+    color:red;
+}
+
+/* visited link */
+.side-bar li a:visited {
+    color: green;
+    
+}
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'poppins', sans-serif;
+}
+/* mouse over link */
+.side-bar li a:hover {
+    color: hotpink;
+    display: block; background-color: black; padding:10px ;
+}
+
+/* selected link */
+.side-bar li a:active {
+    color: blue;
+}
+table { margin-top:50px ;
+    border-collapse: collapse;
+    width: 100%;
+    border-top:solid black ;
+}
+* { 
+
+margin: 0; 
+
+padding: 0; 
+
+box-sizing: border-box; 
+} 
+
+
+body { 
+
+font-family: Arial, sans-serif; 
+
+background-color: #f4f4f4; 
+
+line-height: 1.6; 
+
+color: #333; 
+} 
+
+
+header { 
+
+background-color: #46812a; 
+
+color: #fff; 
+
+text-align: center; 
+
+padding: 1rem 0; 
+} 
+
+
+nav ul { 
+
+list-style: none; 
+
+display: flex; 
+
+justify-content: center; 
+
+background-color: #746f6f; 
+
+padding: 0.5rem 0; 
+} 
+
+
+nav li { 
+
+margin-right: 20px; 
+} 
+
+
+nav a { 
+
+text-decoration: none; 
+
+color: #fff; 
+
+font-weight: bold; 
+
+transition: color 0.3s; 
+} 
+
+
+nav a:hover { 
+
+color: #ff6600; 
+} 
+
+
+.search { 
+
+text-align: center; 
+
+margin-top: 2rem; 
+} 
+
+
+
+.search h2 { 
+
+font-size: 24px; 
+
+margin-bottom: 1rem; 
+} 
+
+
+.search form { 
+
+display: flex; 
+
+justify-content: center; 
+
+align-items: center; 
+} 
+
+
+
+.search input[type="text"] { 
+
+padding: 10px; 
+
+margin-right: 10px; 
+
+border: 1px solid #ccc; 
+
+border-radius: 4px; 
+} 
+
+
+.search button { 
+
+background-color: #ff6600; 
+
+color: #fff; 
+
+border: none; 
+
+padding: 10px 20px; 
+
+border-radius: 4px; 
+
+cursor: pointer; 
+
+transition: background-color 0.3s; 
+} 
+
+
+.search button:hover { 
+
+background-color: #ff3300; 
+} 
+
+
+.job-listings { 
+
+margin: 2rem 0; 
+} 
+
+body{
+  background: color #f1f1f1;
+}
+
+.job-listings h2 { 
+
+font-size: 24px; 
+
+margin-bottom: 1rem; 
+
+text-align: center; 
+} 
+
+
+.job-listings ul { 
+
+list-style: none; 
+} 
+
+
+.job-listings li { 
+
+background-color: #fff; 
+
+border: 1px solid #ccc; 
+
+padding: 20px; 
+
+margin-bottom: 20px; 
+
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+
+
+
+.job-listings h3 { 
+
+font-size: 20px; 
+
+margin-bottom: 10px; 
+} 
+
+
+.job-listings p { 
+
+font-size: 14px; 
+
+margin-bottom: 10px; 
+} 
+
+
+.job-listings a { 
+
+background-color: #333; 
+
+color: #fff; 
+
+text-decoration: none; 
+
+padding: 10px 20px; 
+
+border-radius: 4px; 
+
+display: inline-block; 
+
+transition: background-color 0.3s; 
+} 
+
+
+.job-listings a:hover { 
+
+background-color: #ff6600; 
+} 
+
+
+footer { 
+
+text-align: center; 
+
+background-color: #333; 
+
+color: #fff; 
+
+padding: 1rem 0; 
+}
+
+  </style>
+   <script>
+    function Solve(val) {
+       var v = document.getElementById('res');
+       v.value += val;
+    }
+    function Result() {
+       var num1 = document.getElementById('res').value;
+       var num2 = eval(num1);
+       document.getElementById('res').value = num2;
+    }
+    function Clear() {
+       var inp = document.getElementById('res');
+       inp.value = '';
+    }
+    function Back() {
+       var ev = document.getElementById('res');
+       ev.value = ev.value.slice(0,-1);
+    }
+ </script>
+</head>
+<body>
+  <fieldset>
+    <H1 class="SDAD" style="background-color: green; color: black; font-family: 'Times New Roman', Times, serif; font-weight: bolder;  font-size: xx-large; text-align: center; padding: 10PX;">JOBS BOARD PORTAL</H1>
+  </fieldset>
+  <header class="VISHESH" style="display: grid;">
+    <nav class="navbar">
+<div class="container">
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">HOME
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ENROLL</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">APPLY-JOB</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GALLERY</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LIBRARY</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">REMOTE</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">IT SECTOR</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SCHOOL -MANAGMENT</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">COMPLAIN</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">REQUEST-LETTER </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">EXPERIENCE</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SOFTWARE DEVELOPER </a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ANNEXURE</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">REVIEW</a></li>
+    </ul>
+  </div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">JOBS
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" style="width: 250px;">
+    <h5>NOTES COMPUTER LANUAGES</h5>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FRONT-END DEVELOPER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">BACK-END DEVELOPER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">DATA SCIENCE</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">APPLICATION DEVELOPER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ANDROID DEVELOPER</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WEB-DEVELOPER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SOFTWARE-DEVELOPER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SR ENGINEER I</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">DEVOPS PROFFESIONAL </a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PRINCIPAL OF SOFTWARE ENGINEER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">APPLICATION LEAD</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">AI/ML DEVELOPER</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PHP  LARAVEL DEVELOPER</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">COMPANIES
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GOOGLE</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">AMAZON</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TATA CONSULTANCY SERVICES</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MICROSOFT</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">APPLE</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">DELOITTE</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ORACLE CORPORATION</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WIPRO</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">FLIPKART</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NOKIA</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HP</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INFOSYS<a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INFO-TECH</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">ABOUT-US
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LINK-1</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LINK-2</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LINK-3</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LINK-4</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LINK-5</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TERMS AND POLICY</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CONNECTORS</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MANAGMENT TOOLS</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">META -AI</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">GRAPHICS POLICY</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">REGULATOR</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SCAM</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ALERT-MEMBERSHIP</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">CONTACT-US
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CONTACT-FORM</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QUERY-1</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QUERY-2</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QUERY-3</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QUERY-4</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">PRIVACY-POLICY
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INFORMATION</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">INFORMATION-PLATFORM</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">LOGIN</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">SIGNUP</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">QUERY-FORM</a></li>
+  </ul>
+</div>
+<input type="search" class=" search1" value="SEARCH" >
+<input type="button" style=" background-color: blue; border: 0px solid blue; margin-top: 0px;" class="search button1" value="SEARCH">
+</div>
+</nav>
+</header>
+<header>
+<h1 style="text-align: center; margin-left: 100px; color :#ff3300;">WELCOME TO MY HOMEPAGE</h1>
+<section class="search"> 
+
+  <h2>FIND YOUR DREAM JOBS</h2> 
+
+  <form action="#" method="get"> 
+
+      <input type="text" name="Preferences" 
+
+          placeholder="Preferences"> 
+
+      <input type="text" name="location" 
+
+          placeholder="Location"> 
+
+      <input type="text" name="company" 
+
+          placeholder="Company"> 
+
+      <button type="submit"> 
+
+          Search 
+
+      </button> 
+
+  </form> 
+
+</section> 
+
+<section class="job-listings"> 
+
+  <h2>LATEST JOBS LISTENING:</h2> 
+
+  <ul> 
+
+      <li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+
+          <h3 style="color: slategray;">WEB-DEVELOPER</h3> 
+
+          <p>Company: ABC Tech</p> 
+
+          <p>Location:MICROSOFT</p> 
+
+          <p>Description: Good Web Developer</p> 
+
+          <a href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/ASSCIATE.HTML">Apply Now</a> 
+
+      </li> 
+
+      <li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+
+          <h3 style=" color: slategray;">FRONT-END DEVELOPER</h3> 
+
+          <p>Company:AMAZON</p> 
+
+          <p>Location: India </p> 
+
+          <p>Description:Good Front-end Developer</p> 
+
+          <a href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/ASSCIATE.HTML">Apply Now</a> 
+
+      </li> 
+
+      <li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+        <h3 style="color: slategray;">BACK-END DEVELOPER</h3> 
+        <p>Company:FLIPKART</p> 
+        <p>Location: India </p> 
+        <p>Description:Good Back-end Developer</p> 
+        <a href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/ASSCIATE.HTML">Apply Now</a> 
+    </li> 
+    <li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+      <h3 style="color: slategray;">Graphic Designer</h3> 
+      <p>Company:TATA CONSULTANCY SERVICES</p> 
+      <p>Location: India </p> 
+      <p>Description:Good Graphic Designer</p> 
+      <a href="ASSCIATE.HTML">Apply Now</a> 
+  </li> 
+  <li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+    <h3 style="color: slategray;">PAN</h3> 
+    <p>Company:ICICI BANK</p> 
+    <p>Location: India </p> 
+    <p>Description:Good in probationary officer's programme(PAN in india)</p> 
+    <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">ASSOCIATE</h3> 
+  <p>Company:FORD</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in associate</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li  style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">SALES EXECUTIVE</h3> 
+  <p>Company: INDUSIND BANK</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in bank or commerce sector</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;" > 
+  <h3 style="color: slategray;">ACCOUNTANT</h3> 
+  <p>Company:deloitte</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in mathmatics and commerce</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">  MICROBI0LOGIST</h3> 
+  <p>Company:DR.lalpath lab</p> 
+  <p>Location: India </p> 
+  <p>Description:Good Graphic Designer</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">CUSTOMER SUPPORT EXECUTIVE</h3> 
+  <p>Company:trigent software</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in coding</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;"> BOAT APPRENTICE TRAINEE</h3> 
+  <p>Company:nokia</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in developer </p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;"> LEAD GENERATION EXECUTIVE</h3> 
+  <p>Company:thinksprout Info-tech</p> 
+  <p>Location: India </p> 
+  <p>Description:Good Graphic Designer /multitasking ability</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">FRESHER</h3> 
+  <p>Company:unifybrains Info-tech</p> 
+  <p>Location: India </p> 
+  <p>Description:Good Graphic Designer / developing /developer</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">  MARKETING EXECUTIVE</h3> 
+  <p>Company:Star laser technololgy</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in sales and Management skill</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">MAVHINE LEARNING</h3> 
+  <p>Company:Info-tech</p> 
+  <p>Location: India </p> 
+  <p>Description:Good  in machine learning </p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">  ARTIFICIAL -INTELLIGENCE</h3> 
+  <p>Company:Info -tech</p> 
+  <p>Location: India </p> 
+  <p>Description:Good  in artificial intelligence</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">ADMINISTRATIVE-ASSISTANT</h3> 
+  <p>Company:Wishup.co</p> 
+  <p>Location: India </p> 
+  <p>Description:Good Graphic Designer / ms-excell,ms-powerpoint/programmer</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">UNIX/LINUX Support Executive</h3> 
+  <p>Company:TATA CONSULTANCY SERVICES</p> 
+  <p>Location: India </p> 
+  <p>Description:Good Graphic Designe/IT knowledge</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+<li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">COMPANY SECRETARY</h3> 
+  <p>Company:verse invovation</p> 
+  <p>Location: India </p> 
+  <p>Description:Good sales and Management </p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> <li style="color: darkorchid; font: 1em sans-serif; font-size: xx-large; font-weight: bolder;"> 
+  <h3 style="color: slategray;">TECHNICAL ACCOUNT MANAGER</h3> 
+  <p>Company:amazon web services</p> 
+  <p>Location: India </p> 
+  <p>Description:Good in full stack web development</p> 
+  <a href="ASSCIATE.HTML">Apply Now</a> 
+</li> 
+  </ul> 
+
+</section> 
+<img src="C:\Users\adity\OneDrive\Documents\Pictures\1685670270233.jpg" width="300px" height="300px" style="margin-left:100px; border-radius: 50%;">
+<BR>
+  <BR>
+<a href="C:\Users\adity\OneDrive\Documents\Pictures\1685670270233.jpg" style="margin-left: 80PX; text-decoration: none; font-size: larger; font-variant: normal; font-family: 'Times New Roman', Times, serif; font-size: xx-large; color: #333;">PROFILE</a>
+<br>
+<br>
+<br>
+<P style=" margin-left:100PX; font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: 900;">CHANCELLOR:</P>
+<P style=" margin-left:100PX; font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: 900;">VISHESH KUMAR PRAJAPATI</P>
+<p style=" margin-left:100PX; font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: 900;">CERTIFICATES:</p>
+<p style=" margin-left:100PX; font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: 900;">BACHELOR OF TECHNONOLOGY- SOFTWARE ENGINEERING [DEVELOPER-DREAM]</p>
+<P style=" margin-left:100PX; font-size: x-large; font-family: 'Times New Roman', Times, serif; font-weight: 900; ">DREAM COMPANY : MICROSOFT</P>
+<div class=" LOGO" style="margin-left: 600px; display: grid; grid-template-columns: repeat(2,0fr);" >
+<div style="background-color:red ;  height: 200px; width:200px  " class="red"></div> 
+<div style="background-color: green ; height: 200px; width: 200px;"class="yellow"></div>
+<div style="background-color : blue ; height: 200px; width: 200px; "class="green"></div>
+<div style="background-color:yellow ; height: 200px;  width: 200px;"class="blue"></div>
+</div>
+<h1 style="margin-left:100px;">MIOCROSOFT</h1>
+</header>
+<sidebar>
+<ul class="side-bar" style="display:block;padding:0px ; margin-top:100px; height: auto; max-height: 600px; overflow-x:hidden ; width: 400px;">
+  <h1 style="text-align: center; background-color:darkgreen ;"> COURSE-CONTENT</h1>
+<li style="list-style-position:inside; background-color:rgb(0, 42, 17); padding:10px ;"><a href="#">DCA</a></li>   
+<li style="list-style-position:inside; background-color:rgb(172, 6, 36); padding:10px ;"><a href="#">BCA</a></li>
+  <li style="list-style-position:inside; background-color:rgb(172, 6, 122); padding:10px ;"><a href="#">TYPE-WRITER</a></li>
+  <li style="list-style-position:inside; background-color:saddlebrown; padding:10px ;"><a href="#">CCC(TRIPLE-C)</a></li>
+  <li style="list-style-position:inside; background-color:hotpink; padding:10px ;"><a href="#">CODER(CODING)</a></li>
+  <li style="list-style-position:inside; background-color: brown; padding:10px ;"><a href="#">ADCA</a></li>
+    <li style="list-style-position:inside; background-color:navy; padding:10px ;"><a href="#">HIRING CHALLENGE</a></li>
+    <li style="list-style-position:inside; background-color:goldenrod; padding:10px ;"><a href="#">TRENDING NOW</a></li> 
+    <li style="list-style-position:inside; background-color:aqua; padding:10px ;"><a href="#"> DSA</a></li> 
+    <li style="list-style-position:inside; background-color:chocolate; padding:10px ;"><a href="#">JAVA</a></li> 
+    <li style="list-style-position:inside; background-color: chartreuse; padding:10px ;"><a href="#">PYTHON</a></li> 
+    <li style="list-style-position:inside; background-color:coral; padding:10px ;"><a href="#">C++</a></li> 
+    <li style="list-style-position:inside; background-color: purple; padding:10px ;"><a href="#">C</a></li> 
+    <li style="list-style-position:inside; background-color:blue; padding:10px ;"><a href="#">PHP</a></li> 
+    <li style="list-style-position:inside; background-color: brown; padding:10px ;"><a href="#">CSS</a></li> 
+    <li style=" list-style-position:inside; background-color:orangered; padding:10px ;"><a href="#">HTML</a></li> 
+    <li style="list-style-position:inside; background-color: seagreen; padding:10px ;"><a href="#">DATA STRUCTURE</a></li> 
+    <li style="list-style-position:inside; background-color: blueviolet; padding:10px ;"><a href="#">AlGORITHMS</a></li> 
+    <li style="list-style-position:inside; background-color: red; padding:10px ;"><a href="#">Company    </a> </li>
+    <li style="list-style-position:inside; background-color: lawngreen; padding:10px ;><a href="#">About Us   </a>  </li>
+    <li style="list-style-position:inside; background-color:coral; padding:10px ;"><a href="#"> Careers    </a> </li>
+    <li style="list-style-position:inside; background-color: purple; padding:10px ;"><a href="#">In Media   </a>  </li>
+    <li style="list-style-position:inside; background-color: rgb(4, 255, 0); padding:10px ;"><a href="#">Contact Us </a>  </li>
+    <li style="list-style-position:inside; background-color: rgb(34, 0, 255); padding:10px ;"><a href="#">Terms and Conditions</a> </li>
+    <li style="list-style-position:inside; background-color: rgb(172, 6, 122); padding:10px ;"><a  href="#">Privacy Policy      </a>  </li>
+    <li style="list-style-position:inside; background-color:yellowgreen; padding:10px ;"><a href="#">Copyright Policy    </a> </li>
+    <li style="list-style-position:inside; background-color:goldenrod; padding:10px ;"><a href="#">Third-Party Copyright Notices </a> </li>
+ <li style=" list-style-position:inside; background-color:orangered; padding:10px ;"><a href="#">Advertise with us   </a> </li>
+</ul>
+</sidebar>
+<footer>
+ <P style=" font-family: 'Times New Roman', Times, serif; font-weight: bolder; font-size: xx-large; background-color: #495250; padding: 10PX; text-align: center;">visheshprajapati7920@gmail.com</P> 
+</footer>
+</body>
+</html>
+<----------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>login</title>
+</head>
+<style>
+*{box-sizing: border-box;}
+h1{color: black; text-align: center;}
+form{text-align: center; text-decoration: solid; color: #666; background-color:#f1f2f3 ;display: grid; gap:50px; border: 5px solid #fff; padding: 15px;margin:100px 100px 100px 100px ;}
+body{background-color:hotpink;}
+input[type="text"]{width:800px ; height:40px; font-variant: small-caps; font: 1em sans-serif; font-weight: bolder;}
+form{font-weight: bolder;font: 1em sans-serif; text-decoration: solid;font-variant: small-caps; color: black; font-size:20PX;}
+.a3,.a4{ text-align: center;
+  float: left;
+  width: 50%;
+}
+
+</style>
+<body>
+ <form>
+<h1 style="font-size:50PX ;">LOGIN</h1>
+<img src="C:\Users\adity\OneDrive\Documents\WhatsApp Image 2024-07-05 at 09.19.08_75936d72.jpg" alt=" logo" style="width:200px; height: 200px; margin-left:550px ; margin-right: 500px;">
+<label >
+<input type="text" placeholder="USER NAME" value="user name"required >
+</label>
+<label for="Password">PASSWORD:
+ <input type="text"   placeholder="Password"  value="Password" required>
+</label>
+<a style="color:peru ; cursor:alias;" href="file:///C:/Users/adity/forgetpassword.html">forget password</a>
+<label>
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+  </label>
+  <p>By creating an account you agree to our <a href="file:///C:/Users/adity/termsandpolicy.html " style="color:dodgerblue">Terms & Privacy</a>.</p>
+<label>
+<a  class="a3"  style="box-sizing: border-box; color:darkgreen;text-decoration: none; background-color: chartreuse; padding: 10px;"   href="APPLY.html">login</a>
+ <a  class="a4"        style="box-sizing:border-box;color:red; text-decoration: none; background-color: hotpink; padding: 10px;"   href="file:///C:/Users/adity/signup.html">signup</a>
+</label>   
+ </form>   
+</body>
+</html>
+<....................................................................................................................................>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> registration form</title>
+    <style>
+      body{background-color:green ;}
+    h1{background-color: blue; width:2800px ; padding: 10px; border: 10px solid blue;}   
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; font-size: xx-large; font-weight: bolder; font-family: 'Times New Roman', Times, serif; width: 1500PX;" >REGISTRATION--FORM</h1>
+<form>
+<p> SELECT YOUR CITY</p>
+ <select name='city'>
+ <option value="delhi">delhi</option>
+ <option value="mumbai">mumbai</option>
+ <option value="gujarat">gujarat</option>
+ <option value="chenai"> chenai</option>
+ <option value=" rajasthan"> rajasthan</option>
+ <option value="goa"> gao</option>
+ <option value="hyderabad">hyderabad</option>
+ <option value="delhi">delhi</option>
+ <option value="lucknow">lucknow</option>
+ <br>
+ <br>
+<br>
+<br>
+ <label>SEARCH:
+  <input type=" search" value='search' >
+ </label>
+ <br>
+ <br>
+<label>PINCODE:
+ <input type="pincode" value="pincode" class='pincode'>
+</label>
+<br>
+<br>
+<P> ADDRESS:
+ <textarea name='address' placeholder=" enter your address" rows="5"> address</textarea>
+</P>
+  <br>
+    <br>
+    <label>MOBILE NUMBER:
+      <input type="call" value=" mobile number" class=" mobile number">
+      </label>
+      <br>
+      <br>
+      <label> EMAIL:
+       <input type="email"  value="email" class="email"> 
+        </label>
+        <br>
+        <br>
+        <label >PASSWORD:
+          <input type="password" value="password" class="password">
+          </label>
+          <br>
+          <P> NAME:
+            <input type="text" value="NAME" class="NAME">
+            </P>
+            <BR>
+            <P> DATE OF BIRTH:
+            <input type="date" value="DATE OF BIRTH" class="DATE OF BIRTH">
+              </P>  
+          <br>
+          <P> CANDIDATE PHOTO: 
+      <input type="file" placeholder="candidate photo" class=" candidate photo">
+          </P>
+      <br>
+      <br><button style="background-color: #73AD21; color: blue; width: 130px; height: 50px; font-size: xx-large; font-weight: bolder;">
+      <a href="file:///C:/Users/adity/OneDrive/Documents/c%20file/aditya%20kumar/layout-2.html" >SUMIT</a>
+    </button>
+<label>
+  <input type="checkbox" value="next" class="next"> verified( checked all details are correct)
+</label>
+        </form>
+    </mains>
+    <p style="text-align: center; background-color: black; color: #73AD21; padding: 17px; border: 2px solid black;">Copyright@v.k.p</p>
+</body>
+</html>
+<.................................................................................................................................>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terms and policy</title>
+<head>
+  <style>
+    h2{
+      background-color: blue; color: black; text-align: center; font-size: xx-large;font-weight: bolder;
+    }
+    h1{
+      background-color: darkgreen; color: black; font-size: xx-large; font-weight: bolder; text-align: center;
+    }
+    body{
+      background-color: slategray;
+    }
+  </style>
+  </head>
+<body>
+<header>
+<h1 ><b>                             REGISTRATION--FORM                                  </b>  </h1>                      
+ <H2 id="demo1" >  <b> BASIC DETAILS OF STUDENT  </b> </H2>
+ <form>
+    <h1 id="demo2">  PREVIOUS CLASS DETAILS (ACADMICS)</h1>
+    <FORM action="/action.ph">
+        <H1> class-10</H1>
+        <P> SCHOOL NAME:
+            <input type="teXT" value="SCHOOL NAME" class=" SCHOOL NAME">
+        </P>
+        <p> ROLL NUMBER :
+            <input type="number" value="ROLL NO." class=" ROLL NUMBER">
+        </p>
+        <BR>
+        <P> MARKS class-10:
+            <input type="number" value="MARKS" class=" MARKS"
+        </P>
+        <BR>
+            <BR>
+        <P> GRADE:
+<input type="GRADE" value=" GRADE" class=" GRADE"
+        </P>
+        <BR>
+            <BR>
+  <P> MAXIMUM MARKS:
+<input type="MARKS" value=" MARKS" class="MARKS"
+  </P>
+  <BR>
+    <br> 
+  <P> MINIMUM MARKS
+<input type="MARKS" value=" MARKS" class=" MARKS"
+  </P>  
+  <h5> select your subject</h5>
+</labelfor='math'>
+<input type="checkbox" value="math"name='subject'id='101'>MATHMATICS
+</label>
+<br>
+</labelfor ='physics'>
+<input type="checkbox"value='physics'name='subject'id='102'>PHYSICS
+</label>
+<br>
+</labelfor='chemistry'>
+<input type="checkbox"value='chemistry'name='subject'id="103">CHEMISTRY
+</label>
+<br> 
+<label for=" english">
+<input type="checkbox" value=" english" name="subject" id="104">ENGLISH
+ </label>
+<br>
+<label for="hindi">
+<input type="checkbox" value="hindi" name="subject" id="105"> HINDI
+</label>
+<br>
+</labelfor='MORAL SCIENCE'>
+<input type="checkbox" value="MORAL SCIENCE"name='subject'id='101'>MORAL SCIENCE
+</label>
+<br>
+</labelfor ='ART'>
+<input type="checkbox"value='ART'name='subject'id='102'>ART
+</label>
+<br>
+</labelfor='GEOGRAPHY'>
+<input type="checkbox"value='GEOGRAPHY'name='subject'id="103">GEOGRAPHY
+</label>
+<br> 
+<label for=" CIVICS">
+<input type="checkbox" value=" CIVICS" name="subject" id="104">CIVICS
+ </label>
+<br>
+<label for="HISTORY">
+<input type="checkbox" value="HISTORY" name="subject" id="105"> HISTORY
+</label>
+<br>
+<br>
+<br>
+
+  <H1> class-11</H1>   
+        <P> SCHOOL NAME:
+        <input type="teXT" value="SCHOOL NAME" class=" SCHOOL NAME">
+        </P>
+        <p> ROLL NUMBER :
+            <input type="number" value="ROLL NO." class=" ROLL NUMBER">
+        </p>
+        <BR>
+        <P> MARKS class-11:
+<input type="number" value="MARKS" class=" MARKS"
+        </P>
+        <BR>
+            <BR>
+        <P> GRADE:
+<input type="GRADE" value=" GRADE" class=" GRADE"
+        </P>
+        <BR>
+            <BR>
+  <P> MAXIMUM MARKS:
+<input type="MARKS" value=" MARKS" class="MARKS"
+  </P>
+  <BR>
+    <br> 
+  <P> MINIMUM MARKS
+<input type="MARKS" value=" MARKS" class=" MARKS"
+  </P>
+  <h5> select your subject</h5>
+</labelfor='math'>
+<input type="checkbox" value="math"name='subject'id='101'>math
+</label>
+<br>
+</labelfor ='physics'>
+<input type="checkbox"value='physics'name='subject'id='102'>physics
+</label>
+<br>
+</labelfor='chemistry'>
+<input type="checkbox"value='chemistry'name='subject'id="103">chemistry
+</label>
+<br> 
+<label for=" english">
+<input type="checkbox" value=" english" name="subject" id="104">english
+ </label>
+<br>
+<label for="hindi">
+<input type="checkbox" value="hindi" name="subject" id="105"> hindi
+</label>
+<br>
+<label for="biology">
+    <input type="checkbox" value="biology" name="subject" id="105"> biology
+    </label>
+<br>
+<label for="physical education">
+    <input type="checkbox" value="physical education" name="subject" id="105"> physical education
+    </label>
+    <br>
+    <label for="computer science">
+      <input type="checkbox" value="computer science" name="subject" id="105"> computer science
+      </label>
+<br>
+<br>
+  <H1> class-12</H1> 
+  <P> SCHOOL NAME:
+    <input type="teXT" value="SCHOOL NAME" class=" SCHOOL NAME">
+    </P>
+  <p> ROLL NUMBER :
+      <input type="number" value="ROLL NO." class=" ROLL NUMBER">
+  </p>
+  <BR>
+  <P> MARKS class-12:
+ <input type="number" value="MARKS" class=" MARKS">
+  </P>
+  <BR>
+  <P> GRADE:
+<input type="GRADE" value=" GRADE" class=" GRADE">
+  </P>
+  <BR>
+<P>MAXIMUM MARKS:
+ <input type="MARKS" value=" MARKS" class="MARKS">
+   </P> 
+   <BR>
+ <P>MINIMUM MARKS:
+<input type="MARKS" value=" MARKS" class=" MARKS">
+</P>
+<h5> select your subject</h5>
+</labelfor='math'>
+<input type="checkbox" value="math"name='subject'id='101'>math
+</label>
+<br>
+</labelfor ='physics'>
+<input type="checkbox"value='physics'name='subject'id='102'>physics
+</label>
+<br>
+</labelfor='chemistry'>
+<input type="checkbox"value='chemistry'name='subject'id="103">chemistry
+</label>
+<br> 
+<label for=" english">
+<input type="checkbox" value=" english" name="subject" id="104">english
+ </label>
+<br>
+<label for="hindi">
+<input type="checkbox" value="hindi" name="subject" id="105"> hindi
+</label> 
+<br>
+</label for='biology'>
+<input type="checkbox" value="biology"name='subject'id='101'>biology
+</label>
+<br>
+</label for ='physical education'>
+<input type="checkbox"value='physical education'name='subject'id='102'>physical education
+</label>
+<br>
+<br>
+<button style="background-color: blue; color: black;  font-weight: bolder; height:60px ; width: 100px;">
+  <a  style="color: black;"   href="graduation.html">SUBMIT</a>
+</button>
+<label>
+  <input type="checkbox" value="next" class="next"> verified (checked  all details are correct)
+</label>
+</header>
+</body>
+</html>
+<......................................................................................................................>'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terms and policy</title>
+<head>
+  <style>
+    h2{
+      background-color: blue; color: black; text-align: center; font-size: xx-large;font-weight: bolder;
+    }
+    h1{
+      background-color: darkgreen; color: black; font-size: xx-large; font-weight: bolder; text-align: center;
+    }
+    body{
+      background-color: slategray;
+    }
+  </style>
+  </head>
+<body>
+<header>
+<h1 ><b>                             REGISTRATION--FORM                                  </b>  </h1>                      
+ <H2 id="demo1" >  <b> BASIC DETAILS OF STUDENT  </b> </H2>
+ <form>
+    <FORM action="/action.ph">
+        <H1> GRADUATION-DETAILS</H1>
+<P> COLLEGE/UNIVERSITY NAME:
+    <input type="teXT" value="COLLEGE NAME" class=" COLLEGE NAME">
+</P>
+<p> ROLL NUMBER :
+    <input type="number" value="ROLL NO." class=" ROLL NUMBER">
+</p>
+<BR>
+<P> SGPA/CGPA:
+    <input type="number" value="PERCENTILE" class="PERCENTILE">
+</P>
+<BR>
+    <BR>
+        <P> GRADE:
+<input type="GRADE" value=" GRADE" class=" GRADE">
+        </P>
+        <BR>
+            <BR>
+  <P> MAXIMUM CGPA:
+<input type="CGPA" value=" CGPA" class="CGPA">
+  </P>
+  <BR>
+    <br> 
+  <P> MINIMUM CGPA
+<input type="CGPA" value=" CGPA" class=" CGPA">
+  </P>  
+  
+  <H1> POST-GRADUATION DETSILS(OPTIONAL)</H1>   
+
+  <P> COLLEGE/UNIVERSITY NAME:
+    <input type="teXT" value="COLLEGE NAME" class=" COLLEGE NAME">
+</P>
+<p> ROLL NUMBER :
+    <input type="number" value="ROLL NO." class=" ROLL NUMBER">
+</p>
+<BR>
+<P> SGPA/CGPA:
+    <input type="number" value="PERCENTILE" class="PERCENTILE">
+</P>
+<BR>
+    <BR>
+        <P> GRADE:
+<input type="GRADE" value=" GRADE" class=" GRADE">
+        </P>
+        <BR>
+            <BR>
+  <P> MAXIMUM CGPA:
+<input type="CGPA" value=" CGPA" class="CGPA">
+  </P>
+  <BR>
+    <br> 
+  <P> MINIMUM CGPA
+<input type="CGPA" value=" CGPA" class=" CGPA">
+  </P> 
+  <H1>EXTRA-DETAILS</H1>   
+
+  <P>EXPERIENCE:
+    <input type="teXT" value="text" class="texT">
+</P>
+<p> INTERNSHIP -COMPANY:
+    <input type="text" value="text" class=" texT">
+</p>
+<BR>
+    <BR>
+<P>INTERNSHIP-DOMAIN :
+    <input type="text" value="text" class="texT">
+</P>
+<BR>
+    <BR>
+        <P>RESUME:
+<input type="file" value=" file" class=" file">
+        </P>
+        <BR>
+            <BR>
+  <P> MAXIMUM SALARY:
+<input type="number" value="MONEY" class="MONEY">
+  </P>
+  <BR>
+    <br> 
+  <P> MINIMUM SALARY
+<input type="number" value="MONEY" class=" MONEY">
+<BR>
+    <BR>
+<button style="background-color: blue; color: black;  font-weight: bolder; height:60px ; width: 100px;">
+  <a  style="color: black;"   href="RESPONSE.html">SUBMIT</a>
+</button>
+<label>
+  <input type="checkbox" value="next" class="next"> verified (checked  all details are correct)
+</label>
+</header>
+</body>
+</html>
+<...............................................................................................................>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  body {background-color: blueviolet;
+
+  }
+  </style>
+  </head>
+  <body>
+<div class="container" style="background-color: slategray; color: black; border-radius:20% ; margin-top:100px;">
+    <h1>THANK YOU BEING  SUBMITTING YOUR JOB FORM</h1>
+</div>
+<div style="background-color: antiquewhite; color: blue; border-radius: 10%;  width: 800px; text-align: center; margin-left: 300px; height: 400px;">
+  <h4 style="margin-top:100px ;">THANK YOU VISITING OR FILLING JOB APPLICATION FORM</h4> 
+  <P>we have recieved your application and we  will get  back to you soon.
+
+  </P> 
+  <p>meanwhile you can follow us on instagram ,twitter ,linkedin,telegram</p>
+  <a href ="">EDIT RESPONSE</a>
+<br>
+  <A href="GET BACK">GET BACK TO HOMEPAGE</A>
+  <br>
+  <img  src="C:\Users\adity\OneDrive\Documents\Pictures\Documents - Copy\wordpress\wp-admin\images\wordpress-logo.png" width="150px" height="150px">
+</div>
+  </body>
+  </html>
